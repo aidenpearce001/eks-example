@@ -194,10 +194,7 @@ ingress-single   *                  52.227.171.191   80      13m
 
 Testing to see if it's work
 
-Route traffic to the services using named based virtual hosts rather than paths
-
 ```
-kubectl apply -f ingress-namebased.yaml
 curl http://$INGRESSIP/ --header 'Host: red.example.com'
 ```
 **Output:**
